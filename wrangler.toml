@@ -1,0 +1,18 @@
+# Top-level configuration
+name = "inactive-email-manager"
+main = "src/index.ts"
+
+compatibility_date = "2024-11-28"
+workers_dev = false
+
+send_email = [
+    {name = "SEB"},
+]
+
+[[workflows]]
+name = "sleep-workflow"
+binding = "SLEEP"
+class_name = "SleepWorkflow"
+
+[observability]
+enabled = true
