@@ -1,0 +1,15 @@
+# Top-level configuration
+name = "afterlife-vault"
+main = "src/index.js"
+
+compatibility_date = "2024-11-28"
+
+send_email = [
+    {name = "OWNER", destination_address = "<OWNER_EMAIL>"},
+]
+
+[vars]
+OWNER_EMAIL = "<OWNER_EMAIL>"
+
+[observability]
+enabled = true
