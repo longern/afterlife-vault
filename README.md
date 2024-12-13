@@ -18,10 +18,9 @@
 
 ## Getting Started
 1. [Verify your email address](https://developers.cloudflare.com/email-routing/get-started/enable-email-routing/) and your trusted contacts' email addresses in Cloudflare Email Routing.
-2. Create a new Cloudflare Worker.
-3. Fork this repository and connect it to your Worker in Settings -> Build -> Git Repository.
-4. Create a variable `OWNER_EMAIL` as your email address.  
-   Create a secret `SECRET` as a cryptographically secure random string.  
+2. Fork this repository. Create a new Cloudflare Worker and connect your fork in Settings -> Build -> Git Repository.
+3. Create a variable `OWNER_EMAIL` as your email address.  
+   Create a secret `SECRET` as a cryptographically secure random string. You can use https://djecrety.ir/ .  
    Create a secret `VAULT_CONTENT` as any secret content you want to send to your trusted contacts.
-5. Add a custom address in Email -> Email Routing -> Custom addresses as the trigger email.
-6. Send an email to the trigger email address with the subject `invite`. The content of the email should be the trusted contact's email addresses, each on a new line.
+4. Add a custom address in Email -> Email Routing -> Custom addresses as the trigger email.
+5. [Send an email](mailto:trigger@example.com?subject=invite&body=List%20your%20contacts%3A%0A) to the trigger email address with the subject `invite`. The content of the email should be the trusted contact's email addresses, each on a new line.
